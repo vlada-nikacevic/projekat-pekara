@@ -1,0 +1,211 @@
+@font-face{
+  font-family: cookie_run;
+  src: url(CookieRunBold.ttf);
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  font-family: 'cookie_run';
+}
+
+body{
+  background-color: #fec52e;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #54410f;
+  position: sticky;
+  top: 0;
+  z-index:1;
+}
+
+.logo{
+  height: 150px;
+  margin: auto 5px;
+}
+
+.nav-link{
+  display: inline;
+  margin: 13px 10px;
+  font-size: 25px;
+  text-align: right;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: #fec52e;
+  padding: 5px;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+
+.nav-link a:hover {
+  background-color: white;
+}
+
+.njiva{
+  background-image: url('../img/njiva.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.njiva-tekst{
+  width: 400px;
+  text-align: center;
+  height: 150px;
+}
+
+.njiva-tekst h1{
+  -webkit-text-stroke: 2px white;
+}
+
+.njiva-tekst span{
+  background-color: #fec52e;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+.traktor{
+  height:10%;
+  position: absolute;
+  bottom: 0%;
+  left: -1000;
+  animation: traktor-animacija 5s linear infinite;
+}
+
+@keyframes traktor-animacija{
+  from{left: -1000;}
+  to{left: 1000;}
+}
+
+.o-nama{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  margin: 25px;
+}
+
+.o-nama h1{
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.paragraf{
+  text-align: justify;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.pekara{
+  width: 95%;
+}
+
+.katalog h1, h2{
+  margin: 30px;
+}
+
+.katalog-kartice{
+  margin: 15px auto;
+  padding: 10px;
+  width: 75%;
+  background-color: white;
+  border: 3px solid #54410f;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.kartica{
+  width: 25%;
+  margin:10px;
+  background-color: #fec52e;
+  border: 2px solid #54410f;
+  border-radius: 30px;
+  transition: 0.15s ease;
+}
+
+.kartica:hover{
+  transform: scale(1.1);
+}
+
+.kartica img{
+  width:100%;
+  height: 50%;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom: 2px solid #54410f;
+}
+
+.kartica p{
+  margin: 15px;
+}
+
+.forma-div{
+  margin: 20px auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forma label, input, select, textarea{
+  margin: 8px;
+}
+
+@media screen and (min-width:320px) and (max-width:425px){
+
+.logo{
+  height: 100px;
+}
+
+.nav-link{
+  display: block;
+  font-size: 20px;
+}
+
+.paragraf{
+  font-size: 20px;
+}
+
+.katalog-kartice{
+  width: 80%;
+}
+
+.kartica{
+  width: 33%;
+}
+
+.kartica p{
+  font-size: 10px;
+}
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  
+.logo{
+  height: 100px;
+}
+
+.nav-link{
+  font-size: 20px;
+}
+
+}
